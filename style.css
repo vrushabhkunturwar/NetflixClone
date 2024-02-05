@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(./Assets/Images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+.main .box{
+    height: 644px;
+    width: 100%;
+    opacity: 0.59;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width:72vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+}
+nav img {
+    color: red;
+    width: 145px;
+    position: relative;
+    z-index: 10;
+}
+select{
+    position: relative;
+    z-index: 10;
+    padding: 2px 10px;
+    margin-right: 20px;
+    /* border: none; */
+}
+select option{
+    color: black;
+}
+nav button {
+    position: relative;
+    z-index: 10;
+}
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 21px;
+    padding: 0 30px;
+}
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+.btn{
+    padding: 3px 12px;
+    /* font-weight: 550; */
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    /* border: 1px solid white; */
+    cursor: pointer;
+    font-size: 15px;
+
+
+}
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 5px 26px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 550;
+    border: none;
+}
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.main input {
+    padding: 10px 101px 10px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
