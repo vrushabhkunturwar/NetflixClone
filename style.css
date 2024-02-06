@@ -133,19 +133,11 @@ nav button {
 
 /* Section part  */
 
-.first{
-    display: flex;
-    justify-content: center;
-    max-width: 70vw;
-    margin: auto;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}
+
 .first {
     display: flex;
     justify-content: center;
-    max-width: 70vw;
+    max-width: 75vw;
     margin: auto;
     color: white;
     justify-content: center;
@@ -170,15 +162,64 @@ nav button {
     right: 0;
     width: 555px;
 }
-section.first>div :nth-child(1) {
-    font-size: 55px;
+section.first > div :nth-child(1) {
+    font-size: 50px;
     font-weight: bolder;
 }
 
 
 section.first>div :nth-child(2) {
-    font-size: 24px;
+    font-size: 22px;
 }
 .sep{
+    margin-top: 80px;
+}
+
+
+/* Q & A  */
+
+.faq-container {
+    max-width: 950px;
+    margin: 50px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    margin-top: -30px;
     margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #555;
+}
+
+.faq-question {
+    font-size: 22px;
+    /* font-weight: bold;    */
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 14px;
+}
+
+.faq-answer.active {
+    display: block;
+    color: #ccc;
 }
